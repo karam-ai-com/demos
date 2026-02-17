@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  Karam AI Demo Page Template
+  ============================
+  To create a new customer demo:
+  1. Create a new folder: mkdir <customer-slug>/
+  2. Copy this file: cp _template.html <customer-slug>/index.html
+  3. Update the CSS variables below (colors, branding)
+  4. Replace TENANT_ID_HERE with the customer's tenant ID
+  5. Update the page content (company name, description)
+  6. Commit and push — GitHub Pages will auto-deploy
+  7. URL: https://karam-ai-com.github.io/demos/<customer-slug>/
+-->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMPANY_NAME — مساعد كرم الذكي</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      text-align: right;
+      line-height: 1.8;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .hint {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: var(--primary-light);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Replace with customer logo if available -->
+    <!-- <img src="logo.png" alt="COMPANY_NAME" class="logo"> -->
+
+    <h1>COMPANY_NAME</h1>
+    <p class="subtitle">نسخة تجريبية لمساعد كرم الذكي</p>
+
+    <div class="card">
+      <p>
+        مرحباً بك في النسخة التجريبية من مساعد كرم الذكي الخاص بـ COMPANY_NAME.
+        يمكنك التحدث مع المساعد عبر نافذة المحادثة في أسفل الشاشة.
+      </p>
+      <div class="hint">
+        اضغط على أيقونة المحادثة في الزاوية السفلية لبدء المحادثة
+      </div>
+    </div>
+
+    <footer>
+      مدعوم من <a href="https://karam.ai" target="_blank">Karam AI</a>
+    </footer>
+  </div>
+
+  <!-- Replace TENANT_ID_HERE with the customer's tenant ID -->
+  <script src="https://cdn.karam.cx/embed.js" data-karam-tenant="TENANT_ID_HERE" defer></script>
+</body>
+</html>
